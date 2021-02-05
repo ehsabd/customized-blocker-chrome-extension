@@ -17,7 +17,7 @@ function checkAndRemove() {
         
         if ((new Date()).getTime() < disable_until) return;
         
-        allEls = jQuery().add("p").add("a");//.add("div")
+        allEls = jQuery().add("p").add("a").add("h2").add("h3")
         if (allEls.length > elCount) {
             // prevCount = elCount;
             elCount = allEls.length;
